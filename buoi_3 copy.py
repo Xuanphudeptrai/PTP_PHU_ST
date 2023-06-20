@@ -23,3 +23,9 @@ print ("1 euro doi sang vn la " + str(vnd/euro) )
 rupeeNepal = 1
 vnd  = 17909500 
 print("1 rupee nepal doi sang vnd la " + str(vnd/rupeeNepal))
+import math 
+r = float(input("moi ban nhap ban kinh hinh tron"))
+cv = 2*math.pi*r
+dt = r**2
+print("chu vi =", cv)
+print("dien tich =", dt)
