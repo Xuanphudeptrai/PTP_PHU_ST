@@ -38,11 +38,13 @@ if b in (1,3,5,7,8,10,12):
      print("thang do co 30 ngay")
 elif  b in (4,6,9,11):
      print("thang do co 31  ngay")    
-elif  b==2:
-   year = int(input( " hay nhap so nam: "))
-if            ( year %  4 == 0 and year % 100!=0 ) or ( year  % 400 == 0):
-      print ( " thang do co 29 ngay ")
-else:   
+elif  b ==2:
+    
+    year = int(input( " hay nhap so nam: "))
+    if            ( year %  4 == 0 and year % 100!=0 ) or  year  % 400 == 0:
+
+     print ( " thang do co 29 ngay ")
+    else:   
       print ( "thang do co 28 ngay ")
 #bai 6 
 m = int(input("hay nhap vao thang nao do ban muon" ))
@@ -53,4 +55,24 @@ elif m in (4,5,6):
 elif m in (7,8,9):
      print(" tháng này nằm trong quý 3") 
 elif m in (10,11,12):
-     print("tháng này năm trong quý 4")         
+     print("tháng này năm trong quý 4")        
+     #bai6
+import math
+a = float(input( "nhap a"))
+b = float(input( "nhap b"))
+c = float(input( "nhap c"))
+
+print("{0}x^2+{1}x+{2}=0". format(a,b,c))
+if(a!=0):
+    delta= b**2 - 4*a*c
+    if (delta<0):
+                 print("phuong thuc vo nghiem")
+    elif (delta==0):
+                 x = -b/(2*a)
+                 print("print co nghiem kep x1=x2", x)
+    else:
+                 x1 = (-b-math.sqrt(delta)/(2*a)) 
+                 x2 = (-b+math.sqrt(delta)/(2*a))
+                 print("co nghiem kep x1={0} va x2={1}". format(x1,x2))     
+else:
+    print("khong phai phuong trinh bat 2")     
